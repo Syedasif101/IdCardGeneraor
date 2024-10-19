@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+center {
+  margin: 3% 5%;
+}
+.main {
+  display: flex;
+  width: 960px;
+  flex-direction: column;
+}
+#container {
+  display: flex;
+}
+.main #heading {
+  background-color: #4047f0;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#container .form {
+  border: 2px solid #ccc;
+  width: 480px;
+  padding: 2rem;
+  text-align: start;
+}
+#container .form h2 {
+  color: #4047f0;
+  font-size: 25px;
+  margin-top: 2rem;
+}
+#container .form .form-group {
+  padding-top: 1.5rem;
+}
+#container .form .form-group label {
+  display: block;
+  font-size: 14px;
+}
+#container .form .form-group input {
+  width: 80%;
+  padding: 10px;
+  font-size: 12px;
+  background-color: rgb(215, 222, 239);
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #4047f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.file-container input {
+  font-size: 12px;
+}
+
+#preview {
+  display: none;
+  max-width: 100px;
+  height: auto;
+}
+
+/* right section */
+#right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  border: 2px solid #ccc;
+  border-left: none;
+}
+#picture-div {
+  display: flex;
+  border: 2px solid #ccc;
+  height: 50%;
+  width: 90%;
+  box-shadow: 2px 2px lightgray;
+  border-radius: 10px;
+}
+#image {
+  width: 40%;
+  background: linear-gradient(to top, #4047f0, #8f94fb);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#right-div h1 {
+  color: #4047f0;
+  line-height: 2;
+}
+#details-div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+}
+p {
+  margin: 0.8rem;
+  font-size: 15px;
+}
+
+/* Added CSS for the image */
+#image img {
+  max-width: 70%;
+  max-height: 80%;
+  object-fit: cover; /* Ensures the image covers the area while maintaining its aspect ratio */
+  border-radius: 20%; /* Optional: Adds a border radius to the image */
+}

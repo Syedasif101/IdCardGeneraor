@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ID Card Generator</title>
+  </head>
+  <body>
+    <center>
+      <div class="main">
+        <h1 id="heading">ID Card Generator</h1>
+        <div id="container">
+          <div class="form">
+            <form>
+              <h2>Enter Student Details</h2>
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="form-group">
+                <label for="college">Enter College Name:</label>
+                <input type="text" id="college" name="college" />
+              </div>
+              <div class="form-group">
+                <label for="location">Enter Location:</label>
+                <input type="text" id="location" name="location" />
+              </div>
+              <div class="form-group">
+                <label for="student-picture">Upload Student's Picture:</label>
+                <div class="file-container">
+                  <input
+                    type="file"
+                    id="student-picture"
+                    accept="image/*"
+                    onchange="displayImage()"
+                  />
+                  <img id="preview" src="" alt="Image preview" />
+                </div>
+              </div>
+              <button type="button" class="btn" onclick="generateCard()">
+                Generate Card
+              </button>
+            </form>
+          </div>
+          <div id="right-div">
+            <h1>Generated ID Card</h1>
+            <div id="picture-div">
+              <div id="image">
+                <img id="img" alt="" />
+              </div>
+              <div id="details-div">
+                <p id="collect_name"></p>
+                <p id="collect_college"></p>
+                <p id="collect_location"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
